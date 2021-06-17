@@ -37,7 +37,7 @@ jobs:
         flake8 hellopy --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Run a script
       run: |
-        python -m hellopy
+        python -m hellopy $GITHUB_ACTOR
 #     - name: Test with pytest
 #       run: |
 #         pytest
